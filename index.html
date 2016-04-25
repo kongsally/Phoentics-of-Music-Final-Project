@@ -25,8 +25,7 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
+   
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -70,7 +69,7 @@
           <a class="mdl-navigation__link" href="#register-use">Register Use</a>
           <a class="mdl-navigation__link" href="#vibrato">Vibrato</a>
           <a class="mdl-navigation__link" href="#pitch-range">Pitch Range</a>
-          <a class="mdl-navigation__link" href="#conclusion">Conclusion</a>
+          <a class="mdl-navigation__link" href="#reference">Reference</a>
          </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
@@ -175,18 +174,68 @@
               </div>
               </div>
 
-            <p>Though the microphone obscures part of the mouth, we can see that Fleming, the opera singer, is the only singer that employs typical operatic vowel modification strategies. To reach the high frequency, she drops her jaw and shortens the vocal tract and raising the larynx. This is seen in the longer “0” shape of her mouth. The FFT and LPC image indicates that Fleming’s strongest partials are in her second formant, likely because she is singing such a high note.(?) Clarkson displays similar qualities because she is singing in falsetto, but her note does not have as high a frequency, nor is she singing with a classical operatic style, so her mouth shape is not so pronounced. In contrast, the other two singers, Hudson and Menzel, have wider open mouths, in a megaphone shape. This is an indication of the vowel modification strategy they are using to raise the first formant. (Titze, Worley, and Stone 2011) analyzed the shape of the vocal tract and vowel modification strategies that singers of different styles use to reach higher notes, contrasting opera singers from belters. 
-            <br>
-             We used the word “glare” to conduct a formant analysis of the vowel modification in each singer. We chose this note because it was a lower frequency in relation to the song and also has a low F1. Additionally, most of the singers would be belting (singing high notes with the chest voice) to produce this note. We saw that Fleming was the only singer whose strongest partial was under the first formant, as we would expect from an opera singer. Clarkson, Hudson, and Menzel all demonstrated strong partials under the 2nd formant, indicating that the F0 was weaker but H2 was stronger. To tune these notes, belters typically employ the megaphone mouth shaped discussed above and attempt to raise the first formant to the second one.</p>
+            <p>From these images, we can see the vowel modification strategies that each singer employs when singing the word “free.” Though the microphone obscures part of the mouth, we can see that Fleming, the opera singer, is the only singer that employs typical operatic vowel modification strategies. The FFT and LPC image indicates that Fleming’s strongest partials are in her first formant, showing that she is tuning the note to the formant. Since the vowel “[i]” has a first formant of around 200 Hz, which is lower than the pitch of the note that she is singing, the vowel’s first formant cannot boost the fundamental frequency or any partial (Sundberg, p. 126). Instead, she tries to adjust the first formant to bring it closer to the pitch that she is singing, by dropping her jaw and shortening the vocal tract, thus raising the larynx. This is seen in the longer “0” shape of her mouth. <br>
+            <br>Clarkson displays similar qualities because she is singing in falsetto, but her note does not have as high a frequency, nor is she singing with a classical operatic style, so her mouth shape is not so pronounced. In contrast, the other two singers, Hudson and Menzel, have wider open mouths, in a megaphone shape. This is an indication of the vowel modification strategy they are using to raise the first formant to the second harmonic, which is typically strongest while belting. Titze, Worley, and Stone 2011 analyzed the shape of the vocal tract and vowel modification strategies that singers of different styles use to reach higher notes, contrasting opera singers from belters. <br>
+            <br>We used the word “glare” to conduct a formant analysis of the vowel modification in each singer. We chose this note because it was a lower frequency in relation to the song and also has a lower first formant. Additionally, most of the singers would be belting to produce this note. We saw that Fleming was the only singer whose strongest partial was under the first formant, as we would expect from an opera singer. Clarkson, Hudson, and Menzel all demonstrated strong partials under the 2nd formant, indicating that the F0 was weaker but H2 was stronger. To tune these notes, belters typically employ the megaphone mouth shaped discussed above and attempt to raise the first formant to the second one.</p>
           </div>
 
           <div id="register-use" class="feature-section mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col">
             <h4> Register Use </h4>
+            <div id = "register-menzel">
+              <div class="mdl-grid demo-content">
+               <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
+               <h5> Idina Menzel </h5>
+                <p>
+                Idina Menzel sings the whole song in her chest register. Rather than switching to head voice (like the other artists) on some of the highest notes, she instead chooses to belt out in her chest register.<br>
+                <br>For example, several studies of Broadway-style musical theater singers have shown that their vocal folds make more/longer contact, resulting in less airflow and a weaker fundamental component<br>
+                <br>On “free”, the fundamental component is weaker in amplitude than 3 harmonics (H2, H4, and H5). This is characteristic of Broadway and the chest register, which is associated with high frequency harmonics of strong amplitude.
+                </p>
+                <button id="menzel-chest" type="button" class="mdl-button">
+                <i class="material-icons md-36">image</i>Chest Register Spectrum</button>
+                <dialog id="menzel-chest-img" class="mdl-dialog">
+                  <div class="mdl-dialog__content">
+                    <img src="images/Menzel_chest.png">
+                  </div>
+                  <div class="mdl-dialog__actions">
+                   <button type="button" class="mdl-button close">Close</button>
+                  </div>
+                </dialog>
+              </div>
+              <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
+                <h5> Kelly Clarkson </h5>
+                <p>
+                Kelly Clarkson similarly sings the vast majority of the song in her chest register. However, unlike Menzel, she switches to her falsetto register on some notes. For example, on “free”, she sings first begins the note in her chest register, and then switches to a pitch of 796.9 Hz in her falsetto. <br>
+                <br>The chest register is associated with a strong fundamental frequency and high amplitude harmonics, which is due to full vibration and firm contact between vocal folds.<br>
+                <br>The falsetto register is associated with less overall energy, especially in higher frequency harmonics, which is due to less vibration and less contact between vocal folds.
+                </p>
+                <button id="clarkson-falsetto" type="button" class="mdl-button">
+                <i class="material-icons md-36">image</i>Falsetto Spectrum</button>
+                 <dialog id = "clarkson-falsetto-img" class="mdl-dialog">
+                  <div class="mdl-dialog__content">
+                    <img src="images/Clarkson_falsetto.png">
+                  </div>
+                  <div class="mdl-dialog__actions">
+                   <button type="button" class="mdl-button close">Close</button>
+                  </div>
+                </dialog>
+                <button id="clarkson-chest" type="button" class="mdl-button">
+                <i class="material-icons md-36">image</i>Chest Register Spectrum</button>
+                <dialog id = "clarkson-chest-img" class="mdl-dialog">
+                  <div class="mdl-dialog__content">
+                    <img src="images/Clarkson_chest.png">
+                  </div>
+                  <div class="mdl-dialog__actions">
+                   <button type="button" class="mdl-button close">Close</button>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
           </div>
 
           <div id="vibrato" class="feature-section mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col">
             <h4> Vibrato </h4>
-            <p> All measurements have been taken on /a/ of “rockets red glare” and the calculation range between 400 Hz and 800 Hz</p>
+            <h5> /a/ of “rockets red glare” with calculation range between 400 Hz and 800 Hz</h5>
 
           <table class="mdl-data-table mdl-js-data-table">
                 <tbody>
@@ -248,7 +297,7 @@
                 </tr>
               </tbody>
             </table>
-           <h5> Reference Material </h5>
+           <h5> Source Material </h5>
            <div class="mdl-grid demo-content">
             <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
               <div class="mdl-card__title mdl-card--expand mdl-color--cyan-300">
@@ -302,6 +351,132 @@
               </div>
           </div>
           </div>
+          <h5> /e/ of “bursting in air” with calculation range between 400 Hz and 800 Hz</h5>
+
+          <table class="mdl-data-table mdl-js-data-table">
+                <tbody>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Singer</td>
+                  <td class="mdl-data-table__cell--non-numeric">Jennifer Hudson</td>
+                  <td class="mdl-data-table__cell--non-numeric">Kelly Clarkson</td>
+                  <td class="mdl-data-table__cell--non-numeric">Renee Fleming</td>
+                  <td class="mdl-data-table__cell--non-numeric">Idina Menzel</td>  
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Avg Pitch (Hz)</td>
+                  <td class="mdl-data-table__cell--numeric">593.7</td>
+                  <td class="mdl-data-table__cell--numeric">516.9</td>
+                  <td class="mdl-data-table__cell--numeric">571.0</td>
+                  <td class="mdl-data-table__cell--numeric">468.4</td> 
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Rate (cycles/ second)</td>
+                  <td class="mdl-data-table__cell--numeric">4.98</td>
+                  <td class="mdl-data-table__cell--numeric">6.05</td>
+                  <td class="mdl-data-table__cell--numeric">6.24</td>
+                  <td class="mdl-data-table__cell--numeric">6.00</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Avg min (Hz)</td>
+                  <td class="mdl-data-table__cell--numeric">568.5</td>
+                  <td class="mdl-data-table__cell--numeric">500.5</td>
+                  <td class="mdl-data-table__cell--numeric">527.2</td>
+                  <td class="mdl-data-table__cell--numeric">454.7</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Avg max (Hz)</td>
+                  <td class="mdl-data-table__cell--numeric">623.9</td>
+                  <td class="mdl-data-table__cell--numeric">527.8</td>
+                  <td class="mdl-data-table__cell--numeric">616.2</td>
+                  <td class="mdl-data-table__cell--numeric">481.3</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Range (Hz)</td>
+                  <td class="mdl-data-table__cell--numeric">55.4</td>
+                  <td class="mdl-data-table__cell--numeric">27.3</td>
+                  <td class="mdl-data-table__cell--numeric">89</td>
+                  <td class="mdl-data-table__cell--numeric">26.6</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Extent</td>
+                  <td class="mdl-data-table__cell--numeric">27.7 Hz, 0.86 ST</td>
+                  <td class="mdl-data-table__cell--numeric">13.7 Hz, 0.92 ST</td>
+                  <td class="mdl-data-table__cell--numeric">44.5 Hz, 1.31 ST</td>
+                  <td class="mdl-data-table__cell--numeric">13.3 Hz, 0.47 ST </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Description</td>
+                  <td class="mdl-data-table__cell--numeric">593.7 Hz ± 0.86 ST</td>
+                  <td class="mdl-data-table__cell--numeric">516.9 Hz ± 0.92 ST</td>
+                  <td class="mdl-data-table__cell--numeric">571.0 Hz ± 1.31 ST</td>
+                  <td class="mdl-data-table__cell--numeric">468.4 Hz ± 0.47 ST</td>
+                </tr>
+              </tbody>
+            </table>
+           <h5> Source Material </h5>
+           <div class="mdl-grid demo-content">
+            <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
+              <div class="mdl-card__title mdl-card--expand mdl-color--cyan-300">
+                
+                <img src = "images/Hudson_air.png">
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <audio controls>
+                      <source src="audio/Hudson_Glare.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                </audio>
+                <h5 class="singer_subheader">Jennifer Hudson - R&B</h5>
+              </div>
+          </div>
+          <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
+            <div class="mdl-card__title mdl-card--expand mdl-color--cyan-300">
+              <img src = "images/Clarkson_air.png">
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                
+                <audio controls>
+                      <source src="audio/Clarkson_Glare.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                </audio>
+                <h5 class="singer_subheader">Kelly Clarkson - Pop</h5>
+            </div>
+          </div>
+          <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
+            <div class="mdl-card__title mdl-card--expand mdl-color--cyan-300">
+                <img src = "images/Fleming_air.png">
+            </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <audio controls>
+                      <source src="audio/Fleming_Glare.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                </audio>
+                 <h5 class="singer_subheader">Renee Fleming - Opera</h5>
+              </div>
+          </div>
+          <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
+            <div class="mdl-card__title mdl-card--expand mdl-color--cyan-300">
+                <img src = "images/Menzel_air.png">
+                 </div>
+              <div class="mdl-card__actions mdl-card--border">
+                
+                <audio controls>
+                  <source src="audio/Menzel_Glare.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+                <h5 class="singer_subheader">Idina Menzel - Broadway</h5>
+              </div>
+          </div>
+          </div>
+          <p>
+            It should be noted that it was difficult to find a note that all four singers used vibrato on, as they come from very difficult musical backgrounds and use vibrato in differing ways. However, they all used vibrato on two notes: “glare” and “air”. <br>
+            - Hudson had the lowest rate (number of cycles per second) on both “glare” and “air”.<br><br>
+            - Fleming had the largest extent by far, followed by Hudson, and then Menzel and Clarkson on both “glare” and “air” <br> 
+            - All four singers were within Sundberg’s standards for both rate and extent. <br>
+          <br>Fleming uses the most vibrato, which makes sense as vibrato is an integral part of operatic song. She also shows more variation of vibrato than the other singers. This could be because opera/classical singing is characterized by freedom, emotion, release of tension, and uncontrolled vibrato, even though many believe that it is a restrictive style of singing. <br>
+          <br>Hudson uses a lot of vibrato on extended tones. Her vibrato is slower and wider than her non-Classical counterparts, and the onset of her vibrato varies throughout the piece. As an R&B/soul singer, this provides rhythm while changing timing and phrasing for expressiveness. <br>
+          <br>Menzel used the least vibrato, which was expected due to her Broadway style of song. Broadway is often characterized by belting and straight tones, with vibrato often being incorporated on the later end of notes. Moreover, vibrato allows artists to sing louder without vocal fatigue and pitch problems. Menzel is the only singer that performed the National Anthem with very minimal accompaniment, and for this reason, she did not need as much vibrato/amplification to be heard by the audience. <br>
+          <br>Clarkson’s shows very strong control over her vibrato, but her use of vibrato is mostly contained to long, extended notes. This is very characteristic of pop music; pop music utilizes effortless sounding vibrato to sustain long notes, but pop singers try to avoid overuse.
+          </p>
           
           </div>
 
@@ -311,11 +486,20 @@
               <div class="mdl-card__supporting-text mdl-cell--12-col mdl-color-text--grey-600 mdl-card--border">
                  <img src="images/f0_plot.png">
               </div>
+              <p>This graph shows the F0 distribution of the four singers for their performance of the National Anthem. We first used a script from the Phoenetics lab that implements <a href="Talkin-rapt.pdf">Talkin's RAPT algorithm </a> for pitch tracking, then wrote a program in R to measure the F0 quantiles.<br>
+              <br>Based on this graph, we could see that Hudson sings in the highest key, followed by Fleming, Clarkson and Menzel. This fact could also be observed from our vibrato analyses<br>
+              <br>This graph is also a clear evidence of Hudson's impressive vocal range, since it shows that Hudson has the biggest range of F0 among the four singers. 
+              </p>
              </div>
           </div>
 
-          <div id="conclusion" class="feature-section mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col mdl-grid">
-            <h4> Conclusion </h4>
+          <div id="reference" class="feature-section mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col">
+            <h4> Reference Material </h4>
+            <p>
+            Sundberg, J. (1987). The science of the singing voice. DeKalb, IL: Northern Illinois University Press.
+            <br>Kleijn, W. B., & Paliwal, K. K. (1995). Speech coding and synthesis. Amsterdam: Elsevier.
+            <br> Titze, I. R., Worley, A. S., & Story, B. H. (2011). Source-vocal tract interaction in female operatic singing and theater belting, J. Singing, 67(5), 561-572.
+            </p>
           </div>
 
           <footer class="mdl-mega-footer">
@@ -323,7 +507,45 @@
           </footer>
       </main>
     </div>
- 
+
+     <script>
+        var menzel_dialog = document.querySelector('#menzel-chest-img');
+        var menzelButton = document.querySelector('#menzel-chest');
+        if (! menzel_dialog.showModal) {
+          dialogPolyfill.registerDialog(menzel_dialog);
+        }
+        menzelButton.addEventListener('click', function() {
+          menzel_dialog.showModal();
+        });
+        menzel_dialog.querySelector('.close').addEventListener('click', function() {
+          menzel_dialog.close();
+        });
+
+        var clarkson_chest_dialog = document.querySelector('#clarkson-chest-img');
+        var clarksonButton = document.querySelector('#clarkson-chest');
+        if (! clarkson_chest_dialog.showModal) {
+          dialogPolyfill.registerDialog(clarkson_chest_dialog);
+        }
+        clarksonButton.addEventListener('click', function() {
+          clarkson_chest_dialog.showModal();
+        });
+        clarkson_chest_dialog.querySelector('.close').addEventListener('click', function() {
+          clarkson_chest_dialog.close();
+        });
+
+        var clarkson_falsetto_dialog = document.querySelector('#clarkson-falsetto-img');
+        var clarksonFButton = document.querySelector('#clarkson-falsetto');
+        if (! clarkson_falsetto_dialog.showModal) {
+          dialogPolyfill.registerDialog(clarkson_falsetto_dialog);
+        }
+        clarksonFButton.addEventListener('click', function() {
+          clarkson_falsetto_dialog.showModal();
+        });
+        clarkson_falsetto_dialog.querySelector('.close').addEventListener('click', function() {
+          clarkson_falsetto_dialog.close();
+        });
+      </script>
+
    
   </body>
 </html>
