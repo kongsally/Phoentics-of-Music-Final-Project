@@ -197,9 +197,32 @@ audio {
 
 img {
   width: 100%;
+  border: solid 2px #eee;
   height: auto;
 }
 
 .mdl-layout-title {
   line-height: 1.5em;
+}
+
+
+table {
+  width: 100%;
+}
+
+.mdl-data-table td {
+  text-align: center !important;
+}
+
+tr > td:first-of-type {
+  text-align: left !important;
+}
+
+.singer_subheader {
+  text-align: center;
+  font-weight: 300;
+}
+
+footer {
+  width: 100%;
 }
