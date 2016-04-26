@@ -220,6 +220,7 @@ tr > td:first-of-type {
 .singer_subheader {
   text-align: center;
   font-weight: 300;
+  padding: 0.5em;
 }
 
 footer {
