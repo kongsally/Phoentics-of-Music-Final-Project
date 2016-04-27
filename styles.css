@@ -213,6 +213,14 @@ table {
   text-align: center !important;
 }
 
+.mdl-data-table th {
+  text-align: center !important;
+}
+
+tr > th:first-of-type {
+  text-align: left !important;
+}
+
 tr > td:first-of-type {
   text-align: left !important;
 }

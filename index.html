@@ -502,7 +502,6 @@
                 </tr>
               </tbody>
             </table>
-           <h5> Source Material </h5>
            <div class="mdl-grid demo-content">
             <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
               <div class="mdl-card__title mdl-card--expand mdl-color--cyan-300">
@@ -618,8 +617,7 @@
                 </tr>
               </tbody>
             </table>
-           <h5> Source Material </h5>
-           <div class="mdl-grid demo-content">
+          <div class="mdl-grid demo-content">
             <div class="demo-cards mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col">
               <div class="mdl-card__title mdl-card--expand mdl-color--cyan-300">
                 
@@ -691,8 +689,38 @@
               <div class="mdl-card__supporting-text mdl-cell--12-col mdl-color-text--grey-600 mdl-card--border">
                  <img src="images/f0_plot.png">
               </div>
-              <p>This graph shows the F0 distribution of the four singers for their performance of the National Anthem. We first used a script from the Phoenetics lab that implements <a href="Talkin-rapt.pdf" target="_blank">Talkin's RAPT algorithm </a> for pitch tracking, then wrote a program in R to measure the F0 quantiles.<br>
-              <br>Based on this graph, we could see that Hudson sings in the highest key, followed by Fleming, Clarkson and Menzel. This fact could also be observed from our vibrato analyses<br>
+              <p>This graph shows the F0 frequency distribution of the four singers for their performance of the National Anthem. We first used a script from the Phoenetics lab that implements <a href="Talkin-rapt.pdf" target="_blank">Talkin's RAPT algorithm </a> for pitch tracking, then wrote a program in R to measure the F0 quantiles.<br>
+              <br> We also had a R Script to print the minimum and maximum pitch from the pitch tracking algorithm, and these were the results:</p>
+              <table class="mdl-data-table mdl-js-data-table">
+                <tbody>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Singer</th>
+                  <th class="mdl-data-table__cell--non-numeric">Minimum Pitch</th>
+                  <th class="mdl-data-table__cell--non-numeric">Maximum Pitch</th>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Hudson</td>
+                  <td class="mdl-data-table__cell--numeric">238.9Hz</td>
+                  <td class="mdl-data-table__cell--numeric">699.1Hz</td>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Fleming</td>
+                  <td class="mdl-data-table__cell--numeric">234.7Hz</td>
+                  <td class="mdl-data-table__cell--numeric">689.Hz</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Clarkson</td>
+                  <td class="mdl-data-table__cell--numeric">234.9Hz</td>
+                  <td class="mdl-data-table__cell--numeric">580.6Hz</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Menzel</td>
+                  <td class="mdl-data-table__cell--numeric">189.6Hz</td>
+                  <td class="mdl-data-table__cell--numeric">587.6Hz</td>
+                </tr>
+                </tbody>
+              </table>
+
+              <p>Based on this graph, we could see that Hudson sings in the highest key, followed by Fleming, Clarkson and Menzel. This fact could also be observed from our vibrato analyses. <br>
               <br>This graph is also a clear evidence of Hudson's impressive vocal range, since it shows that Hudson has the biggest range of F0 among the four singers. 
               </p>
              </div>
